@@ -1,0 +1,23 @@
+<h1>Behringer Noise Reducer Mod</h1>
+
+<p>
+This foot pedal is a mono noise reducer to be used with instruments. As long as a volume threshold is not surpassed, hardly anything comes through. But if the input is loud enough it can pass through in full volume. This is done to prevent buzzing and other noises you can get that are audible when it is silent.
+
+This looks complicated. Mainly opamps to determine the input volume.<br>
+Top right, to the left from the 'Behringer' writing is a small flat IC. I figured out (datasheet) that this does the audio volume control. It basically has audio in, out and volume control in.<br>
+So it should be possible to invert the pedal's function by inverting the control voltage. This is not completely simple, because there are actually 3 volume control inputs, and they control an internal transistor assembly. So it is not like we can reverse 2 wires or something. Despite that only one of the inputs is actually controlled.<br>
+But the next best thing to do is to use an opamp to invert the 0,1-0,7V (or something, don't remember) as such that an input of 0,1 means 0,7 output and the other way around.<br>
+The IC was removed to have a better control over what goes in and out.<br>
+With an online opamp calculator I chose my resistors. Our positive offset is 0,8V and the negative input is a 1:1 amplified source signal.<br>
++0,8V - 0,1V = 0,7V<br>
++0,8V - 0,7V = 0,1V<br>
+Everything goes onto a small board.<br>
+Don't mind the two tube shrunk resistors at the bottom.<br>
+The IC returns with most of its legs soldered down, but the volume input.<br>
+Make it switchable for loud/silent passthrough.<br>
+FINALLY I can watch photonicinduction without any hearing damage.<br>
+
+</p>
+
+<!-- gallery:_elektro/2013-03-26_Behringer_Noise_Reducer_Mod:thumb -->
+

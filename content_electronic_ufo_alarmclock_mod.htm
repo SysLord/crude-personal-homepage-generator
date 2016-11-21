@@ -1,0 +1,31 @@
+<h1>UFO Alarmclock Mod</h1>
+
+<p>
+	One day I needed to modify this UFO alarm clock.<br/>
+	Nothing special:<br/>
+	AVR attiny2303<br/>
+	USB-RD232 adapter<br/>
+	cheap display with artifacts<br/>
+	a lot of hot glue
+</p>
+
+<p>
+	First look inside: The clock is completely indepedent from the alarm and UFO firing part. Perfect! The alarm board is even correctly labelled.<br/>
+	One thing we need to keep in mind is that the AVR will be powered from USB and the alarm by battery. The reason is that the alarm needs 4*1.5V and I don't want to risk connecting it to USB or the AVR.
+	Not sure if it is possible to power the alarm-active pin from a different power source. But a large enough resistor might prevent problems.<br/>
+	Make sure everything fits and done.<br/>
+	Seems I even added connectors for programming.	
+</p>
+
+<p>
+	Commands:<br>
+	Zeile0: m0&lt;message&gt;<br/>
+	Zeile1: m0&lt;message&gt;<br/>
+	A: Alarm on<br/>
+	a: Alarm off<br/>
+	See video for demo
+</p>
+<a href="media/_elektro/2015-11-06_ufo_alarmclock_mod/ufo_demo.mp4">UFO_demo.mp4</a>
+
+<!-- gallery:_elektro/2015-11-06_ufo_alarmclock_mod:thumb -->
+
